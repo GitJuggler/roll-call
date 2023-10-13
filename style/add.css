@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container .navbar {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+}
+
+.container .navbar .tab-name {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: default;
+  gap: 20px;
+}
+
+.container .navbar .tab-name a {
+  color: #000;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.container .bar {
+  width: 100%;
+  height: 92%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.container .bar #student-add-form {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.container .bar #student-add-form .input {
+  width: 90%;
+  height: 25%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .bar #student-add-form .input label{
+  font-size: 20px;
+}
+.container .bar #student-add-form .input input{
+  width: 888px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #969696;
+  border: 1px solid;
+  border-radius: 15px;
+  color: #fff;
+}
+.container .bar #student-add-form #add-btn{
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #969696;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all .2s linear;
+}
+
+.container .bar #student-add-form #add-btn:hover{
+  color: #969696;
+  background-color: #fff;
+  border: 1px solid #969696;
+}
+
+.alert {
+  width: 512px;
+  padding: 16px;
+  margin: 8px;
+  max-width: 90%;
+  color: #2ec946;
+  border: 1px solid #2ec946;
+  display: none;
+  flex-direction: column;
+  transform: translateY(-100px);
+}
+
+.alert-content {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #555555;
+}
+
+.alert-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}

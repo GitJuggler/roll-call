@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/add.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Yo'qlama++ | Qo'shish</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="tab-name">
+          <h1>Qo'shish</h1> 
+          <a href="/index.html">menu</a>
+        </div>
+      </div>
+      <div class="bar">
+        <form id="student-add-form">
+            <div class="name input">
+              <label for="name-input">Ism:</label>
+              <input type="name" placeholder="O'quvchi ismini kiriting" id="name-input" name="name">
+            </div>
+            <div class="surname input">
+              <label for="surname-input">Familiya:</label>
+              <input type="surname" placeholder="O'quvchi familiyasini kiriting" id="surname-input" name="surname">
+            </div>
+            <div class="phone-num input">
+              <label for="phone-input">Telefon Raqam:</label>
+              <input type="phone" placeholder="Telefon Raqam" id="phone-input" name="phone">
+            </div>
+            <!-- btn -->
+            <button type="submit" id="add-btn">Qo'shish</button>
+        </form>
+      </div>
+      <div class="alert alert-2-success">
+        <h3 class="alert-title">Saqlandi!</h3>
+        <p class="alert-content">Siz qilgan o'zgarishlar bazaga kiritildi</p>
+      </div>
+    </div>
+    <script src="/functions/add.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </body>
+</html>
