@@ -37,10 +37,20 @@
             <button type="submit" id="add-btn">Qo'shish</button>
         </form>
       </div>
-      <div class="alert alert-2-success">
-        <h3 class="alert-title">Saqlandi!</h3>
-        <p class="alert-content">Siz qilgan o'zgarishlar bazaga kiritildi</p>
+      
+    <div class="toast">
+      <div class="toast-content">
+        <i class='bx bxs-save'></i>
+
+        <div class="message">
+          <span class="text text-1">Muvaffaqiyat!</span>
+          <span class="text text-2">Siz kiritgan o'zgartirishlar adminga yuborildi.</span>
+        </div>
       </div>
+      <i class='bx bx-x close'></i>
+
+      <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+      <div class="progress"></div>
     </div>
     <script src="/functions/add.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
