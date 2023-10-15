@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow-x:hidden;
+}
+.container .navbar{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid #000;
+}
+.container .navbar .logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+.container .navbar .logo a{
+    font-size: 30px;
+    color: #000;
+    transition: all .2s linear;
+}
+.container .navbar .logo a:hover{
+    transform: translate(0, 1px);
+    color: #484848;
+}
+
+.container .navbar .navigation {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.container .navbar .navigation a{
+    font-size: 30px;
+    color: #000;
+    transition: all .2s linear;
+}
+.container .navbar .navigation a:hover{
+    transform: translate(0, 1px);
+    color: #484848;
+}
+
+
+.container .admins-content{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .admins-content .head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid #484848;
+    font-size: 35px;
+    color: rgb(161, 0, 0);
+    font-weight: 900;
+}
+.container .admins-content .content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .admins-content .content .list{
+    width: 48%;
+    height: 100%;
+    border-left: 1px solid #484848;
+    border-right: 1px solid #484848;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.container .admins-content .content .list ol{
+    font-size: 19px;
+}
