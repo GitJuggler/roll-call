@@ -99,3 +99,12 @@
 .container .admins-content .content .list ol{
     font-size: 19px;
 }
+.container .admins-content .content .list ol .rang b{
+    color: rgb(94, 0, 0);
+}
+.container .admins-content .content .list ol .rang{
+    color: red;
+}
+.container .admins-content .content .list ol .admin-name{
+    color: rgb(122, 41, 41);
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Yo'qlama++ ||  register</title>
+        <link rel="stylesheet" href="/style/register.css">
+    </head>
+    <body>
+        <form id="register-form">
+            <div class="container">
+              <h1>Akkaunt ochish</h1>
+              <p>Akkaunt ochish uchun joylarni to'ldiring.</p>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Emailni kiriting" name="email" id="email" required>
+
+              <label for="name"><b>Ism</b></label>
+              <input type="text" placeholder="Ismni kiriting" name="name" id="name" required>
+          
+              <label for="psw"><b>Parol o'ylab toping</b></label>
+              <input type="password" placeholder="Parolni kiriting" name="psw" id="psw" required>
+          
+              <label for="pswRepeat"><b>Parolni qaytaring</b></label>
+              <input type="password" placeholder="Parolni qaytaring" name="psw-repeat" id="pswRepeat" required>
+              <hr>
+          
+              <button type="submit" class="registerbtn">Akkaunt ochish</button>
+            </div>
+          
+            <div class="container signin">
+              <p>Akkauntingiz bormi? <a href="/nav-links/login.html">Kirish</a>.</p>
+            </div>
+          </form>
+          <script src="/functions/register.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </body>
+</html>
