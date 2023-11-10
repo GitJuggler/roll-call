@@ -62,7 +62,7 @@ body {
   font-size: 12px;
 }
 
-.login-box form a {
+.login-box form .btn {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -84,12 +84,12 @@ body {
     0 0 100px #03e9f4;
 }
 
-.login-box a span {
+.login-box .btn span {
   position: absolute;
   display: block;
 }
 
-.login-box a span:nth-child(1) {
+.login-box .btn span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -128,7 +128,7 @@ body {
   }
 }
 
-.login-box a span:nth-child(3) {
+.login-box .btn span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -148,7 +148,7 @@ body {
   }
 }
 
-.login-box a span:nth-child(4) {
+.login-box .btn span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -168,8 +168,68 @@ body {
   }
 }
 
-.login-box .btns{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.login-box .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 0.55rem 0.65rem 0.55rem 0.75rem;
+  border-radius: 1rem;
+  min-width: 400px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  box-shadow: 0px 3.2px 13.8px rgba(0, 0, 0, 0.02),
+    0px 7.6px 33.3px rgba(0, 0, 0, 0.028),
+    0px 14.4px 62.6px rgba(0, 0, 0, 0.035),
+    0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
+    0px 48px 208.9px rgba(0, 0, 0, 0.05), 0px 115px 500px rgba(0, 0, 0, 0.07);
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 39% 61% 42% 58% / 50% 51% 49% 50%;
+  box-shadow: 0px 3.2px 13.8px rgba(0, 0, 0, 0.02),
+    0px 7.6px 33.3px rgba(0, 0, 0, 0.028),
+    0px 14.4px 62.6px rgba(0, 0, 0, 0.035),
+    0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
+    0px 48px 208.9px rgba(0, 0, 0, 0.05), 0px 115px 500px rgba(0, 0, 0, 0.07);
+}
+.close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close:hover {
+  background-color: #fff;
+}
+
+.danger {
+  background-color: rgba(236, 77, 43, 0.2);
+  border: 2px solid #ef9400;
+  transform: translateX(690px) translateY(200px);
+  display: none;
+}
+.danger .icon {
+  background-color: #ec4d2b;
 }

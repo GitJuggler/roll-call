@@ -1,36 +1,87 @@
-<html>
-    <head>
-        <title>Yo'qlama++ ||  register</title>
-        <link rel="stylesheet" href="/style/register.css">
-    </head>
-    <body>
-        <form id="register-form">
-            <div class="container">
-              <h1>Akkaunt ochish</h1>
-              <p>Akkaunt ochish uchun joylarni to'ldiring.</p>
-              <hr>
-          
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Emailni kiriting" name="email" id="email" required>
-
-              <label for="name"><b>Ism</b></label>
-              <input type="text" placeholder="Ismni kiriting" name="name" id="name" required>
-          
-              <label for="psw"><b>Parol o'ylab toping</b></label>
-              <input type="password" placeholder="Parolni kiriting" name="psw" id="psw" required>
-          
-              <label for="pswRepeat"><b>Parolni qaytaring</b></label>
-              <input type="password" placeholder="Parolni qaytaring" name="psw-repeat" id="pswRepeat" required>
-              <hr>
-          
-              <button type="submit" class="registerbtn">Akkaunt ochish</button>
-            </div>
-          
-            <div class="container signin">
-              <p>Akkauntingiz bormi? <a href="/nav-links/login.html">Kirish</a>.</p>
-            </div>
-          </form>
-          <script src="/functions/register.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/login.css" />
+    <title>Yo'qlama++ || akkauntga kirish</title>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Akkaunt ochish</h2>
+      <form id="register-form">
+        <div class="user-box">
+          <input type="text" name="name" required="" />
+          <label>Ism</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required="" />
+          <label>Parol</label>
+        </div>
+        <div class="user-box">
+          <input type="email" name="email" required="" />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="tel" name="tel" required="" />
+          <label>Telefon Raqam</label>
+        </div>
+        <div class="btns">
+          <button type="submit" class="btn submit-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Keyingi
+          </button>
+          <a href="/nav-links/login.html" class="btn back-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ortga
+          </a>
+        </div>
+      </form>
+      <div class="danger alert da">
+        <div class="content">
+          <div class="icon">
+            <svg
+              height="50"
+              viewBox="0 0 512 512"
+              width="50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#fff"
+                d="M449.07,399.08,278.64,82.58c-12.08-22.44-44.26-22.44-56.35,0L51.87,399.08A32,32,0,0,0,80,446.25H420.89A32,32,0,0,0,449.07,399.08Zm-198.6-1.83a20,20,0,1,1,20-20A20,20,0,0,1,250.47,397.25ZM272.19,196.1l-5.74,122a16,16,0,0,1-32,0l-5.74-121.95v0a21.73,21.73,0,0,1,21.5-22.69h.21a21.74,21.74,0,0,1,21.73,22.7Z"
+              />
+            </svg>
+          </div>
+          <p>Nimadir xato ketdi</p>
+        </div>
+        <button class="close">
+          <svg
+            height="18px"
+            id="Layer_1"
+            style="enable-background: new 0 0 512 512"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="18px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              fill="#69727D"
+              d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/functions/register.js"></script>
+  </body>
 </html>

@@ -21,10 +21,21 @@
             <div class="head">Adminlar</div>
             <div class="content">
                 <div class="list">
-                    <ol>1. <span class="rang"><b>[</b>coder<b>]</b></span> <b class="admin-name">Azizbek Eshimov</b></ol>
+                    <ol class="admin one">1. <span class="rang"><b>[</b>coder<b>]</b></span> <b class="admin-name">Azizbek Eshimov</b></ol>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        for (let i = 0; i < document.getElementsByClassName('list').length; i++) {
+            let list = axios.get('')
+
+            list.map((item, index) => {
+                item.namme
+            })
+
+        }
+    </script>
 </body>
 </html>
